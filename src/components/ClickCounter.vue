@@ -1,7 +1,7 @@
 <template>
   <div class="clickCounter">
     <input type="button" value="CLICK HERE TO INCREMENT" @click="onClick" />
-    <input :class="btnClass" type="number" :value="clickCount" disabled />
+    <input :class="labelClass" type="number" :value="clickCount" disabled />
   </div>
 </template>
 <script>
@@ -15,8 +15,8 @@
       },
     },
     computed: {
-      btnClass() {
-        return this.clickCount > 9 ? "btn-red" : "btn-black";
+      labelClass() {
+        return this.clickCount > 9 ? "label-red" : "label-black";
       },
     },
   };
@@ -34,12 +34,12 @@
   }
 
   .clickCounter > input[type="button"] {
-    background: blue;
+    background: #cccccc;
     box-shadow: 0 2px 2px gainsboro;
     border-radius: 4px;
   }
   .clickCounter > input[type="button"]:active {
-    background: #6262e9;
+    background: #b9b9b9;
   }
   .clickCounter > input[type="number"] {
     color: #ffffff;
@@ -47,10 +47,10 @@
     width: 2rem;
   }
 
-  .btn-black {
+  .label-black {
     background: #333333;
   }
-  .btn-red {
+  .label-red {
     background: #ad1717;
   }
 </style>

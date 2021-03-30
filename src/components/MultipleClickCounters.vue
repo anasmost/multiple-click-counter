@@ -2,7 +2,7 @@
   <div>
     <h2>Multiple Counters Component</h2>
     <ClickCounter v-for="i in clickCountersCount" :key="i" @iterated="onIterated" />
-    <input type="button" value="ADD A COUNTER" @click="clickCounterAdd" />
+    <input type="button" value="ADD A COUNTER :)" @click="clickCounterAdd" />
     <pre v-if="clickCountersCount > 1">
       I am rendered only if there is more than one counter.
       
@@ -50,5 +50,9 @@
     text-transform: capitalize;
     min-width: none;
     width: max-content;
+    background: blue;
+  }
+  input[type="button"]:active {
+    background: #6262e9;
   }
 </style>
