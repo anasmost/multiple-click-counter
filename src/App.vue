@@ -1,28 +1,37 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container">
+    <MultipleClickCounters />
   </div>
 </template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  import MultipleClickCounters from "./components/MultipleClickCounters";
+  export default {
+    name: "App",
+    components: {
+      MultipleClickCounters,
+    },
+  };
 </script>
-
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  input {
+    outline: none;
+    border: none;
+    display: inline-block;
+    min-width: 0;
+  }
+  input[type="button"] {
+    cursor: pointer;
+  }
 </style>
