@@ -21,14 +21,16 @@
     },
   };
 </script>
+
 <style scoped>
   .clickCounter {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    column-gap: 2rem;
   }
   .clickCounter > input {
     min-width: 0;
+    min-height: 0;
     padding: 0.5rem;
     text-align: center;
   }

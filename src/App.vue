@@ -12,16 +12,21 @@
     },
   };
 </script>
+
 <style>
   * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
+  pre {
+    white-space: pre-wrap;
+  }
 
   .container {
     max-width: 800px;
     margin: auto;
+    padding: 1rem;
     overflow: hidden;
   }
 

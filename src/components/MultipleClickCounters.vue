@@ -1,7 +1,9 @@
 <template>
   <div>
     <h2>Multiple Counters Component</h2>
-    <ClickCounter v-for="i in clickCountersCount" :key="i" @iterated="onIterated" />
+    <div class="group">
+      <ClickCounter v-for="i in clickCountersCount" :key="i" @iterated="onIterated" />
+    </div>
     <input type="button" value="ADD A COUNTER :)" @click="clickCounterAdd" />
     <pre v-if="clickCountersCount > 1">
       I am rendered only if there is more than one counter.
@@ -31,14 +33,19 @@
     },
   };
 </script>
+
 <style scoped>
   div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem 0;
+    padding: 0.2rem 0;
     gap: 1rem;
     margin: auto;
+  }
+
+  div.group {
+    gap: 0;
   }
 
   input {
