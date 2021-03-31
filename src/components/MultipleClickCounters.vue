@@ -49,17 +49,17 @@
   }
 
   input {
-    padding: 0.5rem;
     border-radius: 4px;
+    width: max-content;
   }
 
   input[type="button"] {
     text-transform: capitalize;
-    min-width: none;
-    width: max-content;
-    background: blue;
+    background: #4067cf;
+    color: #fefefe;
+    padding: 0.5rem 1rem;
   }
   input[type="button"]:active {
-    background: #6262e9;
+    background: #4066cfb2;
   }
 </style>

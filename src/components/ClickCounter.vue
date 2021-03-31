@@ -29,24 +29,23 @@
     column-gap: 2rem;
   }
   .clickCounter > input {
-    min-width: 0;
-    min-height: 0;
-    padding: 0.5rem;
     text-align: center;
   }
 
   .clickCounter > input[type="button"] {
-    background: #cccccc;
+    background: #dbdbdb;
     box-shadow: 0 2px 2px gainsboro;
     border-radius: 4px;
+    padding: 0.5rem 1rem;
   }
   .clickCounter > input[type="button"]:active {
-    background: #b9b9b9;
+    background: #e2e2e2;
   }
   .clickCounter > input[type="number"] {
-    color: #ffffff;
+    color: #fefefe;
     border-radius: 50%;
-    width: 2rem;
+    width: 1.75rem;
+    height: 1.75rem;
   }
 
   .label-black {

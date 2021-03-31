@@ -19,6 +19,10 @@
     margin: 0;
     padding: 0;
   }
+  html,
+  body {
+    font-family: sans-serif;
+  }
   pre {
     white-space: pre-wrap;
   }
